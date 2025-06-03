@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVL Shop</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" type="image/png" href="logo/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+      <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-left">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search...">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-icons">
+                        <a href="sign in.html">
+                        <i class="fas fa-user icon"></i></a>
+                            <i class="fas fa-heart icon"></i>
+                            <div class="cart-icon">
+                                 <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i></a>
+                                <span class="cart-count">0</span>
+                                <span class="cart-price">0.0 MDL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="nav-left">
+                        <a href="shoes.html">Shoes</a>
+                        <a href="404.html">New collection</a>
+                        <a href="homepage.html">Sales</a>
+                    </div>
+                    <div class="nav-logo">
+                        <a href="homepage.html">
+                        <img src="logo/logo.png" alt="">
+                    </a>
+                    <div class="nav-right">
+                        <a href="category.html">Category</a>
+                        <a href="404.html">Contact</a>
+                        <a href="sign in.html">Profile</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <div class="checkout-container">
+        <div class="checkout-left">
+            <p class="coupon-info">Ai un cupon? <a href="#">Dă click aici pentru a-ți introduce codul</a></p>
+            <h2>FACTURARE ȘI LIVRARE</h2>
+            <form class="billing-form">
+                <label>Prenumele*<br>
+                    <input type="text" name="firstName" required>
+                </label><br>
+                <label>Numele*<br>
+                    <input type="text" name="lastName" required>
+                </label><br>
+                <label>Telefon*<br>
+                    <input type="tel" name="phone" required>
+                </label><br>
+                <label>Adresă livrare*<br>
+                    <input type="text" name="address" placeholder="Nume stradă,numar etc." required>
+                </label><br>
+                <label>Adresă email*<br>
+                    <input type="email" name="email">
+                </label>
+            </form>
+            <h2>INFORMAȚII SUPLIMENTARE</h2>
+            <label>Note comandă(opțional)<br>
+                <textarea name="orderNotes" placeholder="Note referitoare la comanda ta,de exemplu:anumite note pentru livrare."></textarea>
+            </label>
+        </div>
+        <div class="checkout-right">
+            <h2>COMANDA TA</h2>
+            <table class="order-summary">
+                <thead>
+                    <tr>
+                        <th>PRODUCT</th>
+                        <th>SUB-TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pantofi oxford VVL<br>x 1</td>
+                        <td>1.900 MDL</td>
+                    </tr>
+                    <tr>
+                        <td>Loaferi cu franj VVL<br>x 1</td>
+                        <td>1.600 MDL</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sub-total</strong></td>
+                        <td><strong>3.500 MDL</strong></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Ridicare din magazin <input type="radio" name="delivery" checked>
+                            <br>
+                            Livrare standard:<span>50,00 MDL</span> <input type="radio" name="delivery">
+                            <br>
+                            Livrare în toată Moldova:<span>60,00 MDL</span> <input type="radio" name="delivery">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>3.500 MDL</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="payment-section">
+                <label><input type="checkbox" checked> Numerar la livrare</label>
+                <input type="text" value="Plătește cu numerar la livrare." readonly>
+                <label><input type="checkbox"> Achită în rate <span class="iute">iute</span></label>
+            </div>
+            <p class="privacy-info">
+                Datele personale vor fi folosite pentru a-ți susține experiența pe acest site web,pentru a administra accesul la contul tău și pentru alte scopuri descrise în <a href="#">politică de confidențialitate</a>.
+            </p>
+            <button class="place-order-btn">PLASEAZĂ COMANDA</button>
+        </div>
+    </div>
+
+         <div class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+        <a href="homepage.html">
+      <img src="logo/logo.png" alt="Logo"/></a>
+    </div>
+    <div class="footer-section">
+                        <h3>Catalog</h3>
+                        <ul>
+                            <li><a href="shoes.html">Shoes</a></li>
+                            <li><a href="#">New collection</a></li>
+                            <li><a href="homepage.html">Sales</a></li>
+                            <li><a href="category.html">Category</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Legal notices</h3>
+                        <ul>
+                            <li><a href="404.html">Terms of sale</a></li>
+                            <li><a href="404.html">Terms of use</a></li>
+                            <li><a href="404.html">Privacy policy</a></li>
+                            <li><a href="404.html">Credits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Payment Methods</h3>
+                        <div class="payment-icons">
+                            <span class="payment-icon"><i class="fab fa-cc-visa"></i></span>
+                            <span class="payment-icon"><i class="fab fa-cc-mastercard"></i></span>
+                            <span class="payment-icon"><i class="fab fa-cc-paypal"></i></span>
+                        </div>
+                    </div>
+  </div>
+</div>
+
+<script src="checkout.js"></script>
+</body>
+</html>

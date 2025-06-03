@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVL Shop</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" type="image/png" href="logo/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-icons">
+                        <a href="sign in.html">
+                        <i class="fas fa-user icon"></i></a>
+                        <i class="fas fa-heart icon"></i>
+                        <div class="cart-icon">
+                            <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i></a>
+                            <span class="cart-count">0</span>
+                            <span class="cart-price">0.0 MDL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="shoes.html">Shoes</a>
+                    <a href="shoes.html">New collection</a>
+                    <a href="homepage.html">Sales</a>
+                </div>
+                <div class="nav-logo">
+                    <a href="homepage.html">
+                    <img src="logo/logo.png" alt="">
+                </a>
+                <div class="nav-right">
+                    <a href="category.html">Category</a>
+                    <a href="404.html">Contact</a>
+                    <a href="sign in.html">Profile</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="register-main">
+        <h1 class="register-title">Create an account</h1>
+        <p class="register-desc">
+            By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.
+        </p>
+        <form class="register-form">
+            <div class="register-row">
+                <div class="register-col">
+                    <label for="first-name">First name*</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="register-col">
+                    <label for="last-name">Last name*</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+            <div class="register-row">
+                <div class="register-col">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="phone-input-wrapper">
+                        <div class="country-select-box">
+                            <img id="country-flag" src="https://flagcdn.com/24x18/md.png" alt="Flag">
+                            <select id="country-select"> 
+                                <option value="+373" data-flag="https://flagcdn.com/24x18/md.png">Moldova</option>
+                                <option value="+43" data-flag="https://flagcdn.com/24x18/at.png">Austria</option>
+                                <option value="+40" data-flag="https://flagcdn.com/24x18/ro.png">Romania</option>
+                                <option value="+49" data-flag="https://flagcdn.com/24x18/de.png">Germania</option>
+                                <option value="+380" data-flag="https://flagcdn.com/24x18/ua.png">Ucraina</option>
+                                <option value="+33" data-flag="https://flagcdn.com/24x18/fr.png">France</option>
+                                <option value="+39" data-flag="https://flagcdn.com/24x18/it.png">Italy</option>
+                                <option value="+44" data-flag="https://flagcdn.com/24x18/gb.png">United Kingdom</option>
+                                <option value="+1" data-flag="https://flagcdn.com/24x18/us.png">United States</option>
+                            </select>
+                        </div>
+                        <div class="phone-field-box">
+                            <label for="phone" class="phone-label">Phonenumber*</label>
+                            <div class="phone-code-input">
+                                <span id="country-code">+373</span>
+                                <input type="tel" id="phone" name="phone" maxlength="15" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="register-col">
+                    <label for="password">Password*</label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="password" name="password" required>
+                        <span class="password-eye" onclick="togglePassword('password', this)">
+                            <i class="fa fa-eye"></i>
+                        </span>
+                    </div>
+                    <div class="password-rules">
+                        <ul>
+                            <li class="pw-req-length">Must contain at least 8 characters.</li>
+                            <li class="pw-req-uppercase">Must contain at least one uppercase letter.</li>
+                            <li class="pw-req-number">Must contain at least one number.</li>
+                            <li class="pw-req-special">Must not contain special characters like ^,/,#,%,&amp;.*.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="register-row">
+                <div class="register-col">
+                    <label for="dob">Date of birth (MM/DD/YYYY)</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div class="register-col">
+                    <label for="confirm-password">Confirm new password*</label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <span class="password-eye" onclick="togglePassword('confirm-password', this)">
+                            <i class="fa fa-eye"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 10px;">
+                <input type="checkbox" id="consent" name="consent">
+                <label for="consent" class="checkbox-label">I consent to receive communications from VVL (including personalized advertising communications).</label>
+            </div>
+            <div style="margin-top: 5px;">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" class="checkbox-label required">I have read and I agree to Terms of Service and Privacy Policy of the VVL online boutique.*</label>
+            </div>
+            <button type="submit" class="register-btn">Create an account</button>
+            <div class="signin-link">Have an account already?</div>
+            <button type="button" class="signin-btn" onclick="window.location.href='sign in.html'">SIGN IN</button>
+        </form>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+              <a href="homepage.html">
+            <img src="logo/logo.png" alt="Logo"/></a>
+          </div>
+          <div class="footer-section">
+                              <h3>Catalog</h3>
+                              <ul>
+                                  <li><a href="shoes.html">Shoes</a></li>
+                                  <li><a href="shoes.html">New collection</a></li>
+                                  <li><a href="homepage.html">Sales</a></li>
+                                  <li><a href="category.html">Category</a></li>
+                              </ul>
+                          </div>
+                          <div class="footer-section">
+                              <h3>Legal notices</h3>
+                              <ul>
+                                  <li><a href="#">Terms of sale</a></li>
+                                  <li><a href="#">Terms of use</a></li>
+                                  <li><a href="#">Privacy policy</a></li>
+                                  <li><a href="#">Credits</a></li>
+                              </ul>
+                          </div>
+                          <div class="footer-section">
+                              <h3>Follow Us</h3>
+                              <div class="social-icons">
+                                  <a href="#" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="#" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                                  <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                                  <a href="#" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                              </div>
+                          </div>
+                          <div class="footer-section">
+                              <h3>Payment Methods</h3>
+                              <div class="payment-icons">
+                                  <span class="payment-icon"><i class="fab fa-cc-visa"></i></span>
+                                  <span class="payment-icon"><i class="fab fa-cc-mastercard"></i></span>
+                                  <span class="payment-icon"><i class="fab fa-cc-paypal"></i></span>
+                              </div>
+                          </div>
+        </div>
+      </div>
+      <script src="register.js"></script>
+</body>
+</html>

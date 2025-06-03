@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVl Shop</title>
+    <link rel="stylesheet" href="selling.css">
+    <link rel="icon" type="image/png" href="logo/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-icons">
+                     <a href="sign in.html">
+                        <i class="fas fa-user icon"></i></a>
+                        <i class="fas fa-heart icon"></i>
+                        <div class="cart-icon">
+                              <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i></a>
+                            <span class="cart-count">0</span>
+                            <span class="cart-price">0.0 MDL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+ 
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="shoes.html">Shoes</a>
+                    <a href="404.html">New collection</a>
+                    <a href="homepage.html">Sales</a>
+                </div>
+                <div class="nav-logo">
+                    <a href="homepage.html">
+                    <img src="logo/logo.png" alt="">
+                </a>
+                <div class="nav-right">
+                    <a href="category.html">Category</a>
+                    <a href="#">Contact</a>
+                    <a href="sign in.html">Profile</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<main class="product-main">
+  <section class="product-details">
+    <div class="product-gallery">
+      <div class="main-image-wrapper" style="position:relative;">
+        <img class="main-product-image" src="imgs/image 72.png" alt="Pantofi clasici VVL" data-large="imgs/image 72.png">
+      </div>
+      <div class="product-thumbnails">
+        <img src="imgs/image 72.png" data-large="imgs/image 72.png" alt="Thumb 1">
+      </div>
+    </div>
+    <div class="product-info">
+      <nav class="breadcrumb">
+        <a href="homepage.html">Prima pagină</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="shoes.html">Magazin</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="#">New collection</a>
+        <span class="breadcrumb-separator">/</span>
+        <span>Pantofi clasici VVL</span>
+      </nav>
+      <h1>Pantofi clasici VVL</h1>
+      <div class="product-price">1.800 MDL</div>
+      <table class="product-attributes">
+        <tr><td>Brand</td><td>VVL</td></tr>
+        <tr><td>Color</td><td>Black</td></tr>
+        <tr><td>Size</td><td>41, 42, 43, 44, 45</td></tr>
+        <tr><td>Material</td><td>Piele naturală</td></tr>
+        <tr><td>Available</td><td>Chisinau</td></tr>
+      </table>
+      <div class="product-actions">
+        <div class="quantity-selector">
+          <button id="decrease-qty">-</button>
+          <input type="number" id="quantity-input" value="1" min="1">
+          <button id="increase-qty">+</button>
+        </div>
+        <button class="add-to-cart" id="add-to-cart-btn">add to cart</button>
+      </div>
+      <button class="buy-credit-btn">BUY WITH CREDIT</button>
+      <div class="add-favourites">
+        <i class="fa-regular fa-heart"></i> Add to favourites
+      </div>
+      <div class="product-meta">
+        <div class="product-category">
+          Category: <a href="#">Pantofi</a>, <a href="#">New collection</a>, <a href="#">Shoes</a>
+        </div>
+        <div class="product-share">
+          Share:
+          <a href="#" class="share-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="share-icon"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="share-icon"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" class="share-icon"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#" class="share-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="similar-products">
+    <h2>Produse similare</h2>
+    <div class="similar-carousel">
+      <button class="carousel-arrow left"><i class="fa fa-chevron-left"></i></button>
+      <div class="similar-products-list">
+        <div class="similar-product-card">
+          <img src="imgs/image 60.png" alt="Ghete BLACK BULL">
+          <div class="similar-product-info">
+            <div class="similar-product-title">Pantofi casual VVL</div>
+            <div class="similar-product-price">1.600 MDL</div>
+          </div>
+        </div>
+        <div class="similar-product-card">
+          <img src="imgs/image 82.png" alt="Loaferi cu franj VVL">
+          <div class="similar-product-info">
+            <div class="similar-product-title">Pantofi clasici VVL</div>
+            <div class="similar-product-price">3.500 MDL</div>
+          </div>
+        </div>
+        <div class="similar-product-card">
+          <a href="soldout.html">
+          <img src="imgs/image 69.png" alt="Pantofi clasici VVL"></a>
+          <div class="similar-product-info">
+            <div class="similar-product-title">Botine chelsea fils VVL</div>
+            <div class="similar-product-price">1.800 MDL</div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-arrow right"><i class="fa fa-chevron-right"></i></button>
+    </div>
+  </section>
+</main>
+    <div class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+              <a href="homepage.html">
+            <img src="logo/logo.png" alt="Logo"/></a>
+          </div>
+          <div class="footer-section">
+                              <h3>Catalog</h3>
+                              <ul>
+                                  <li><a href="shoes.html">Shoes</a></li>
+                                  <li><a href="#">New collection</a></li>
+                                  <li><a href="homepage.html">Sales</a></li>
+                                  <li><a href="category.html">Category</a></li>
+                              </ul>
+                          </div>
+                          <div class="footer-section">
+                              <h3>Legal notices</h3>
+                              <ul>
+                                  <li><a href="404.html">Terms of sale</a></li>
+                                  <li><a href="404.html">Terms of use</a></li>
+                                  <li><a href="404.html">Privacy policy</a></li>
+                                  <li><a href="404.html">Credits</a></li>
+                              </ul>
+                          </div>
+                          <div class="footer-section">
+                              <h3>Follow Us</h3>
+                              <div class="social-icons">
+                                  <a href="#" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="#" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                                  <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                                  <a href="#" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                              </div>
+                          </div>
+                          <div class="footer-section">
+                              <h3>Payment Methods</h3>
+                              <div class="payment-icons">
+                                  <span class="payment-icon"><i class="fab fa-cc-visa"></i></span>
+                                  <span class="payment-icon"><i class="fab fa-cc-mastercard"></i></span>
+                                  <span class="payment-icon"><i class="fab fa-cc-paypal"></i></span>
+                              </div>
+                          </div>
+        </div>
+      </div>
+      <script src="selling.js"></script>
+</body>
+</html>
